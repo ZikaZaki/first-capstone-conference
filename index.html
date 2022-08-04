@@ -8,10 +8,10 @@
     <title>CC Global Summit 2015</title>
 </head>
 <body>
-   <header>
-    <!-- ===========Start of Top Social Menu Container========= -->
-    <div id="social_top_menu" class="social-top-menu desktop-visible">
-        <ul id="social_list" class="social-top-menu social-list">
+   <header class="container">
+    <!-- ===========Start of Top Social Header Container========= -->
+    <div id="social_top_header" class="social-top-header desktop-visible">
+        <ul id="social_list" class="social-top-header social-list">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -23,35 +23,49 @@
     </div>
     <!-- ===========End of Top Social Menu Container========= -->
 
-    <!-- ===========Start of Top Menu Container========= -->
-    <div class="container main-header">
-        <div id="side_menu" class="side-menu mobile-visible">
-            <div id="burger_icon" class="side-menu burger-icon">
-                <div id="bar1" class="burger-icon bar"></div>
-                <div id="bar2" class="burger-icon bar"></div>
-                <div id="bar3" class="burger-icon bar"></div>
-            </div>
+    <!-- =============Start of The Main Container============= -->
+    <div class="main-header">
+        <div id="menu_toggle_btn" class="menu-toggle-btn mobile-visible">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <div id="side_menu" class="side-menu">
             <nav id="side_menu_nav">
-                <ul id="nav_list" class="side-menu nav-list">
-                    <li class="nav-list l-items"><a href="">About</a></li>
-                    <li class="nav-list l-items"><a href="">Program</a></li>
-                    <li class="nav-list l-items"><a href="">Join</a></li>
-                    <li class="nav-list l-items"><a href="">Partners</a></li>
-                    <li class="nav-list l-items"><a href="">News</a></li>
-                    <li class="nav-list l-items"><a id="campaign_btn" href="">CC Campaign</a></li>
+                <ul id="side_menu_list" class="side-menu-list">
+                    <a href="#" id="menu_close_btn"><i class="fa-solid fa-xmark"></i></a>
+                    <li class="side-menu-list l-items"><a href="">About</a></li>
+                    <li class="side-menu-list l-items"><a href="">Program</a></li>
+                    <li class="side-menu-list l-items"><a href="">Join</a></li>
+                    <li class="side-menu-list l-items"><a href="">Partners</a></li>
+                    <li class="side-menu-list l-items"><a href="">News</a></li>
+                    <li class="side-menu-list l-items"><a id="campaign_btn" href="">CC Campaign</a></li>
+                    <li class="side-menu-list contact-sublist">
+                        <ul class="contact-sublist">
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-codepen"></i></a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
-        <div class=" logo">
+        <div class="logo">
             <img src="assets/img/logo.png" alt="CC Global Summit 2015">
         </div>
-        <!-- <div class="container main_menu"></div> -->
-        <!-- <nav class="container mobile-nav"></nav>
-        <nav class="container desktop-nav">
-            
-            <div class="container main-menu"></div>
-        </nav> -->
+        <div class="main-menu desktop-visible">
+            <nav id="main_menu_nav">
+                <ul id="main_menu_list" class="main-menu-list">
+                    <li class="main-menu-list l-items"><a href="">About</a></li>
+                    <li class="main-menu-list l-items"><a href="">Program</a></li>
+                    <li class="main-menu-list l-items"><a href="">Join</a></li>
+                    <li class="main-menu-list l-items"><a href="">Partners</a></li>
+                    <li class="main-menu-list l-items"><a href="">News</a></li>
+                    <li class="main-menu-list l-items"><a id="campaign_btn" href="">CC Campaign</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
+    <!-- =============Start of The Main Container============= -->
    </header>
    <section class="container section-intro">
 
