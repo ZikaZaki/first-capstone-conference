@@ -3,6 +3,17 @@
 /* Document
    ========================================================================== */
 
+  /**
+   * Resetting all elements' default CSS
+   */
+
+ * , *:before, *:after { 
+  box-sizing:border-box; 
+  -moz-box-sizing:border-box; 
+  -webkit-box-sizing:border-box; 
+  -ms-box-sizing:border-box;
+}
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -20,8 +31,13 @@
    * Remove the margin in all browsers.
    */
 
-  body {
+  body, body:before, body:after {
     margin: 0;
+    /* Below Lines Added By Me */
+    box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    -webkit-box-sizing:border-box; 
+    -ms-box-sizing:border-box;
   }
 
   /**
