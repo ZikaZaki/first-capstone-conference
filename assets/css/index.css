@@ -57,10 +57,11 @@
     align-items: center;
     background-color: var(--neutral);
     box-shadow: rgb(0 0 0 / 30%) 0px 2px 8px 0px;
-    position: absolute;
+    position: relative;
     padding: 5px 25px;
     width: 100%;
-    gap: calc(50% - 25%);
+    gap: 25px;
+    /* gap: calc(50% - 25%); */
     height: 5rem;
 }
 
@@ -86,31 +87,44 @@
 
 .side-menu {
     display: inline-block;
-    height: 550px;
-    width: 250px;
+    height: 0;
+    width: 0;
     border-radius: 0 70% 130px 0;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     position: absolute;
     top: 0;
+    left: 0;
     background: linear-gradient(to left, var(--primary), var(--primary));
-    transition: 0.6s ease-in-out;
+    transition: 0.5s ease-in-out;
     opacity: 1;
+}
+
+.side-menu.active {
+    height: 550px;
+    width: 250px;
+    position: absolute;
+    opacity: 1;
+    padding:0;
+}
+
+.side-menu nav {
+    display: none;
 }
 
 .side-menu-list {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 45px 5px 10px 30px;
+    padding: 45px 5px 5px 25px;
 }
 
 #menu_close_btn {
-    font-size: 20px;
+    font-size: 35px;
     font-weight: bold;
     color: var(--bg_color);
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 20px;
+    left: 30px;
 }
 
 #menu_close_btn:hover {
@@ -142,7 +156,6 @@
     content: '';
     transition: 1s;
     position: absolute;
-
 }
 
 .side-menu-list li a:hover:after {
@@ -157,10 +170,10 @@
 .side-menu-list .contact-sublist {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 15px;
 }
 
-.contact-sublist {
+.contact-sublist ul {
     padding: 0;
 }
 
@@ -178,14 +191,17 @@
 
 .main-header .logo {
     box-shadow: none;
-    /* padding: 0 20px; */
+    /* padding: 0 45px; */
 }
 
 .main-menu {
-    display: none;
-    /* display: flex; */
+    /* display: none; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     font-weight: bold;
-    width: 100%;
+    /* width: 75%; */
+    width: calc(100% - 130px);
 }
 
 .main-menu-list {
@@ -211,6 +227,28 @@
 .desktop-visible {
     /* display: none; */
 }
-.side-menu {
+/* .side-menu {
     display: none;
+} */
+.section-intro {
+    display: flex;
+    background-image: url('/assets/img/mobile-intro-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+    /* .main-menu {
+        display: flex;
+    } */
+    .section-intro {
+        display: flex;
+        background-image: url('/assets/img/desktop-intro.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-position: center;
+    }
 }
