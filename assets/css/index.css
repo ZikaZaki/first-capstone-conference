@@ -230,7 +230,7 @@ display: block via JavaScript
   list-style: none;
 }
 
-#campaign_btn {
+#home_campaign_btn {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
@@ -688,12 +688,11 @@ footer {
   .main-menu {
     display: flex;
     justify-content: flex-end;
-
-    /* width: calc(100% - 130px); */
   }
 
   .main-menu-list {
-    gap: 45px;
+    gap: 35px;
+    align-items: center;
   }
 
   .section-intro {

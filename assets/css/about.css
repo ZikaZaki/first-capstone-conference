@@ -234,13 +234,13 @@ display: block via JavaScript
   list-style: none;
 }
 
-#campaign_btn {
+#about_campaign_btn {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
   color: var(--neutral);
   background-color: var(--secondary);
-  padding: 0.5em;
+  padding: 0.5em 1.25em;
   border-radius: 0.25em;
 }
 
