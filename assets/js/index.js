@@ -169,6 +169,7 @@ function createProjectCard(pid) {
   descContainer.appendChild(actionContainer);
   popupProjectCard.appendChild(descContainer);
 }
+createProjectCard(1);
 //= ========================END OF DETAILS POPUP============================//
 /* Toggle Button Function Starts Here */
 const sideMenu = document.getElementById('side_menu');
