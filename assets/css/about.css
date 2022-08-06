@@ -199,6 +199,10 @@ display: block via JavaScript
     padding: 0 25px;
 }
 
+.headline-logo {
+    box-shadow: none;
+    background-color: var(--neutral);
+}
 
 .main-menu {
     /* display: flex; */
@@ -207,14 +211,13 @@ display: block via JavaScript
     justify-content: flex-end;
     font-weight: bold;
     /* width: 75%; */
-    width: calc(100% - 130px);
+    width: calc(100% - 120px);
 }
 
 .main-menu-list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 30px;
     margin: 0;
     padding: 0;
 }
@@ -234,7 +237,7 @@ display: block via JavaScript
     text-decoration: none;
     color: var(--neutral);
     background-color: var(--secondary);
-    padding: 0.5em 1.25em;
+    padding: 0.5em;
     border-radius: 0.25em;
 }
 /* =============================End of Header Section============================= */
@@ -242,12 +245,13 @@ display: block via JavaScript
 /* =============================Start of Intro Section============================ */
 .section-intro {
     display: flex;
-    background-image: url('/assets/img/mobile-intro-bg.png');
+    background-image: url('/assets/img/about-bg.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: auto;
+    background-size: 75% auto;
+    background-position-y: 25%;
+    overflow: auto;
+    /* width: 100%; */
+    /* height: auto; */
     padding: 45px 25px;
 }
 
@@ -258,6 +262,7 @@ display: block via JavaScript
     flex-wrap: nowrap;
     width: 100%;
     text-align: center;
+    align-items: center;
     /* padding: 30px 0; */
 }
 
@@ -286,11 +291,14 @@ display: block via JavaScript
     color: var(--primary);
     background: var(--bg_color);
     padding: 15px 5px;
+    width: 85%;
+    border: solid 1px var(--neutral);
+    margin: 15px;
 }
 
 .location-txt {
-    padding: 30px 0;
     text-align: center;
+    background-color: var(--bg_color);
 
 }
 
@@ -314,12 +322,9 @@ display: block via JavaScript
 .section-programs {
     display: flex;
     flex-direction: column;
-    background-color: var(--primary);
-    background-image: url('/assets/img/pattern_bg.png');
-    background-repeat: repeat;
-    /* background-position: center; */
+    background-color: var(--bg_color);
     width: 100%;
-    min-height: 950px;
+    min-height: auto;
     /* padding: 55px 5px; */
     padding: 75px 25px 25px;
 }
@@ -331,16 +336,36 @@ display: block via JavaScript
     align-items: center;
     width: 100%;
     padding: 0;
-    margin: 0 10px 75px;
+    /* margin: 0 10px 75px; */
 }
 
 .section-title h2 {
     font-family: "lato", Verdana, Tahoma, sans-serif;
     font-size: 24px;
     text-align: center;
-    color: var(--neutral);
+    color: var(--primary);
     margin: 0;
 }
+
+.company-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* padding: 25px; */
+    margin: 10px;
+}
+
+.company-title h2 {
+    font-family: "lato", Verdana, Tahoma, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: var(--primary);
+    margin: 0;
+}
+
+
 
 #speakers-title h2 {
     color: var(--primary);
@@ -350,7 +375,7 @@ display: block via JavaScript
     width: 100px;
     height: 16px;
     border-bottom: 3px solid #ef513c;
-    /* margin: 0 auto 55px; */
+    margin: 0 auto 55px;
 }
 
 /* Card Styling Starts Here */
@@ -362,43 +387,6 @@ display: block via JavaScript
     flex-wrap: wrap;
     gap: 25px;
 }
-
-.speakers-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 25px;
-}
-
-#speaker1 {
-    background-image: url(/assets/img/speaker-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#speaker2 {
-    background-image: url(/assets/img/speaker-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} 
-
-#speaker3 {
-    background-image: url(/assets/img/speaker-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#speaker4 {
-    background-image: url(/assets/img/speaker-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} 
 
 .card {
     color: var(--neutral);
@@ -436,64 +424,6 @@ display: block via JavaScript
     background-position: center;
     background-repeat: no-repeat;
 } 
-
-#program5 {
-    background-image: url(/assets/img/ruby-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} 
-
-#program6 {
-    background-image: url(/assets/img/rails-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} 
-
-#program7 {
-    background-image: url(/assets/img/python-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#program8 {
-    background-image: url(/assets/img/django-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} 
-
-#program9 {
-    background-image: url(/assets/img/kotlin-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} 
-
-#program10 {
-    background-image: url(/assets/img/csharp-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} 
-
-#program11 {
-    background-image: url(/assets/img/postgres-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} 
-
-#program12 {
-    background-image: url(/assets/img/nodejs-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} 
-
-
 
 .card:hover,
 .card:focus-within {
@@ -602,29 +532,27 @@ display: block via JavaScript
 /* Card Styling Ends Here */
 /* ============================End of Programs Section============================ */
 /***********************************************************************************/
-/* ===========================Start of Speakers Section=========================== */
-.section-speakers {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--bg_color);
-    /* width: 100%; */
-    padding: 55px 5px;
-}
-
-.speakers-title h2 {
-    font-family: "lato", Verdana, Tahoma, sans-serif;
-    font-size: 24px;
-    text-align: center;
-    color: var(--primary);
-    margin: 0;
-}
-/* ============================End of Speakers Section============================ */
-
 
 /* Hide all Desktop-Visible */
 .desktop-visible {
     /* display: none; */
 }
+
+
+
+/* .section-speakers {
+    display: flex;
+}
+
+.section-partners {
+    display: flex;
+    background-color: var(--neutral);
+}
+
+footer {
+    display: flex;
+    background-color: var(--primary);
+}  */
 
 footer {
     display: flex;
@@ -671,19 +599,23 @@ footer {
     }
 
     .main-menu-list {
-        gap: 45px;
+        gap: 35px;
+        align-items: center;
     }
 
     .section-intro {
-        background-image: url('/assets/img/desktop-intro.png');
-        background-size: cover;
-        background-position: center;
-        height: 855px;
-        padding: 140px 175px;
+        background-image: url('/assets/img/about-bg.png');
+        background-size: 90% auto;
+        background-position: center 25%;
+        overflow: auto;
+        height: auto;
+        padding: 65px 75px;
+        width: 100%;
     }
 
     .headline {
         /* padding: 45px 0; */
+        gap: 25px;
     }
     
     .title-txt p {
@@ -700,14 +632,14 @@ footer {
         line-height: 2.5rem;
         border: 4px solid #fff;
         background-color: var(--bg_color);
-        margin: 5px;
-        width: 625px;
-        padding: 5px 15px;
+        margin: 15px;
+        width: 75%;
+        padding: 5px 15px 25px;
+        border: solid 1px var(--neutral);
     }
     
     .location-txt {
-        padding: 5px;
-        text-align: justify;
+        text-align: center;
     }
     
     .location-txt h2 {
@@ -716,15 +648,18 @@ footer {
         color: var(--primary);
         margin: 2px;
     }
+
     .location-txt p {
         font-size: 20px;
         margin: 5px 2.5px;
+    }
+    .company-title{
+        padding: 15px;
     }
     /* ===========================Start of Programs Section========================== */
     .section-programs {
         /* padding: 0 10em; */
     }
-
     footer {
         font-family: "lato", Verdana, Tahoma, sans-serif;
         font-size: 20px;
