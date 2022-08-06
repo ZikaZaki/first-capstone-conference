@@ -12,13 +12,13 @@
 - [x] Language: HTML, CSS, & JavaScript
 - [x] Linters: Lighthouse, Webhint, Stylelint and ESLint
 - [x] Code Editor: VS Code
-- [x] [Template 1](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1)
+- [x] [Design Guidelines](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 ## Live Demo (Deployed on GitHub Pages)
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blueviolet)](https://zikazaki.github.io/zikazaki-folio/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blueviolet)](https://github.com/ZikaZaki/first-capstone-conference)
 
-[Live Demo Link](https://zikazaki.github.io/zikazaki-folio/)
+[Live Demo Link](hhttps://github.com/ZikaZaki/first-capstone-conference)
 
 ## Mobile-Screenshots
 
@@ -31,7 +31,7 @@
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the correct project doesn't require testing.**
 
 To get a local copy up and running follow these simple example steps.
 
@@ -48,10 +48,10 @@ To get a local copy up and running follow these simple example steps.
 - Run the following command:
 
   ```
-  git clone https://github.com/ZikaZaki/zikazaki-folio.git
+  git clone https://github.com/ZikaZaki/first-capstone-conference
   ```
 
-- Once finished you should see a new folder called **zikazaki-folio** in your current directory.
+- Once finished you should see a new folder called **capstone-project** in your current directory.
 - Start customizing the project so it fits your personal preferences and needs.
 - Enjoy your new professional portfolio!
 
