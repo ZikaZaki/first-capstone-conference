@@ -332,7 +332,7 @@ display: block via JavaScript
   min-height: 950px;
 
   /* padding: 55px 5px; */
-  padding: 75px 25px 25px;
+  padding: 75px 10px 25px;
 }
 
 .section-title {
@@ -636,7 +636,7 @@ display: block via JavaScript
   background-color: var(--bg_color);
 
   /* width: 100%; */
-  padding: 55px 5px;
+  padding: 55px 10px;
 }
 
 /* ============================End of Speakers Section============================ */
@@ -656,8 +656,7 @@ footer {
   padding: 125px;
   background-color: var(--primary);
   color: var(--bg_color);
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
 }
 
 #scrollback_top {
@@ -744,9 +743,6 @@ footer {
   }
 
   /* ===========================Start of Programs Section========================== */
-  .section-programs {
-    /* padding: 0 10em; */
-  }
 
   footer {
     font-family: "lato", Verdana, Tahoma, sans-serif;
@@ -756,5 +752,6 @@ footer {
     margin: 0 auto;
     background-color: var(--primary);
     color: white;
+    text-align: center;
   }
 }

@@ -584,8 +584,7 @@ footer {
   padding: 125px;
   background-color: var(--primary);
   color: var(--bg_color);
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
 }
 
 #scrollback_top {
@@ -680,9 +679,6 @@ footer {
   }
 
   /* ===========================Start of Programs Section========================== */
-  .section-programs {
-    /* padding: 0 10em; */
-  }
 
   footer {
     font-family: "lato", Verdana, Tahoma, sans-serif;
@@ -692,5 +688,6 @@ footer {
     margin: 0 auto;
     background-color: var(--primary);
     color: white;
+    text-align: center;
   }
 }
