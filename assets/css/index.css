@@ -742,7 +742,15 @@ footer {
   }
 
   /* ===========================Start of Programs Section========================== */
-
+  .program-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  
   footer {
     font-family: "lato", Verdana, Tahoma, sans-serif;
     font-size: 20px;
