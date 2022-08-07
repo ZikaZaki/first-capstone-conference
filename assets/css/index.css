@@ -1,5 +1,5 @@
 /* Importing the "normalize.css" file which is for resetting all the default css values */
-@import url("normalize.css");
+@import url("./normalize.css");
 
 /* Importing Fonts */
 @import url('http://fonts.cdnfonts.com/css/lato');
@@ -247,7 +247,7 @@ display: block via JavaScript
 /* =============================Start of Intro Section============================ */
 .section-intro {
   display: flex;
-  background-image: url('/assets/img/mobile-intro-bg.png');
+  background-image: url('../img/mobile-intro-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -324,7 +324,7 @@ display: block via JavaScript
   display: flex;
   flex-direction: column;
   background-color: var(--primary);
-  background-image: url('/assets/img/pattern_bg.png');
+  background-image: url('../img/pattern_bg.png');
   background-repeat: repeat;
 
   /* background-position: center; */
@@ -393,28 +393,28 @@ display: block via JavaScript
 }
 
 #speaker1 {
-  background-image: url(/assets/img/speaker-bg.png);
+  background-image: url(../img/speaker-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #speaker2 {
-  background-image: url(/assets/img/speaker-bg.png);
+  background-image: url(../img/speaker-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #speaker3 {
-  background-image: url(/assets/img/speaker-bg.png);
+  background-image: url(../img/speaker-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #speaker4 {
-  background-image: url(/assets/img/speaker-bg.png);
+  background-image: url(../img/speaker-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -430,84 +430,84 @@ display: block via JavaScript
 }
 
 #program1 {
-  background-image: url(/assets/img/html-bg.png);
+  background-image: url(../img/html-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #program2 {
-  background-image: url(/assets/img/css-bg.png);
+  background-image: url(../img/css-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #program3 {
-  background-image: url(/assets/img/javascript-bg.png);
+  background-image: url(../img/javascript-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #program4 {
-  background-image: url(/assets/img/react-bg.png);
+  background-image: url(../img/react-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #program5 {
-  background-image: url(/assets/img/ruby-bg.png);
+  background-image: url(../img/ruby-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #program6 {
-  background-image: url(/assets/img/rails-bg.png);
+  background-image: url(../img/rails-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #program7 {
-  background-image: url(/assets/img/python-bg.png);
+  background-image: url(../img/python-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #program8 {
-  background-image: url(/assets/img/django-bg.png);
+  background-image: url(../img/django-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #program9 {
-  background-image: url(/assets/img/kotlin-bg.png);
+  background-image: url(../img/kotlin-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #program10 {
-  background-image: url(/assets/img/csharp-bg.png);
+  background-image: url(../img/csharp-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #program11 {
-  background-image: url(/assets/img/postgres-bg.png);
+  background-image: url(../img/postgres-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #program12 {
-  background-image: url(/assets/img/nodejs-bg.png);
+  background-image: url(../img/nodejs-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -694,7 +694,7 @@ footer {
   }
 
   .section-intro {
-    background-image: url('/assets/img/desktop-intro.png');
+    background-image: url('../img/desktop-intro.png');
     background-size: cover;
     background-position: center;
     height: 855px;

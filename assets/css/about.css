@@ -1,5 +1,5 @@
 /* Importing the "normalize.css" file which is for resetting all the default css values */
-@import url("normalize.css");
+@import url("./normalize.css");
 
 /* Importing Fonts */
 @import url('http://fonts.cdnfonts.com/css/lato');
@@ -251,7 +251,7 @@ display: block via JavaScript
 /* =============================Start of Intro Section============================ */
 .section-intro {
   display: flex;
-  background-image: url('/assets/img/about-bg.png');
+  background-image: url('../img/about-bg.png');
   background-repeat: no-repeat;
   background-size: 75% auto;
   background-position-y: 25%;
@@ -411,28 +411,28 @@ display: block via JavaScript
 }
 
 #program1 {
-  background-image: url(/assets/img/html-bg.png);
+  background-image: url(../img/html-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #program2 {
-  background-image: url(/assets/img/css-bg.png);
+  background-image: url(../img/css-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #program3 {
-  background-image: url(/assets/img/javascript-bg.png);
+  background-image: url(../img/javascript-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #program4 {
-  background-image: url(/assets/img/react-bg.png);
+  background-image: url(../img/react-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -623,7 +623,7 @@ footer {
   }
 
   .section-intro {
-    background-image: url('/assets/img/about-bg.png');
+    background-image: url('../img/about-bg.png');
     background-size: 90% auto;
     background-position: center 25%;
     overflow: auto;
