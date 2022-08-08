@@ -2,7 +2,7 @@
 const speakersData = [
   {
     id: 1,
-    name: 'ZikaZaki',    
+    name: 'ZikaZaki',
     image: '/assets/img/speaker1.png',
     organization: 'MIT Institute',
     description:
@@ -11,18 +11,18 @@ const speakersData = [
     + 'such as open source software and Wikipedia.',
   },
   {
-   id: 2,
-   name: 'ZikaZaki',    
-   image: '/assets/img/speaker2.png',
-   organization: 'MIT Institute',
-   description:
+    id: 2,
+    name: 'ZikaZaki',
+    image: '/assets/img/speaker2.png',
+    organization: 'MIT Institute',
+    description:
     'Focusing on a collaborative approach in a networked environment, '
     + 'we created the concept of co-production based on sharing, '
     + 'such as open source software and Wikipedia.',
   },
   {
     id: 3,
-    name: 'ZikaZaki',    
+    name: 'ZikaZaki',
     image: '/assets/img/speaker3.png',
     organization: 'MIT Institute',
     description:
@@ -32,7 +32,7 @@ const speakersData = [
   },
   {
     id: 4,
-    name: 'ZikaZaki',    
+    name: 'ZikaZaki',
     image: '/assets/img/speaker4.png',
     organization: 'MIT Institute',
     description:
@@ -42,7 +42,7 @@ const speakersData = [
   },
   {
     id: 5,
-    name: 'ZikaZaki',    
+    name: 'ZikaZaki',
     image: '/assets/img/speaker5.png',
     organization: 'MIT Institute',
     description:
@@ -52,13 +52,13 @@ const speakersData = [
   },
   {
     id: 6,
-    name: 'ZikaZaki',    
+    name: 'ZikaZaki',
     image: '/assets/img/speaker6.png',
     organization: 'MIT Institute',
     description:
-      'Focusing on a collaborative approach in a networked environment, '
-      + 'we created the concept of co-production based on sharing, '
-      + 'such as open source software and Wikipedia.',
+    'Focusing on a collaborative approach in a networked environment, '
+    + 'we created the concept of co-production based on sharing, '
+    + 'such as open source software and Wikipedia.',
   },
 ];
 
