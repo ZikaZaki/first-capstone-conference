@@ -326,7 +326,6 @@ set to display: block using JavaScript */
   flex-wrap: wrap;
 } */
 
-
 .program-cards {
   display: flex;
   flex-direction: row;
@@ -353,6 +352,7 @@ set to display: block using JavaScript */
 }
 
 .card-title {
+  margin: 0;
   color: var(--secondary);
 }
 
@@ -394,9 +394,6 @@ set to display: block using JavaScript */
   color: var(--secondary);
 }
 
-.card-title {
-  margin:0;
-}
 .card-details {
   text-align: justify;
   color: rgb(255 255 255 / 0.85);
@@ -636,7 +633,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     gap: 25px;
-    text-align: center;    
+    text-align: center;
   }
 
   .card-content {
@@ -646,12 +643,13 @@ footer {
     align-items: center;
   }
 
-.card-title {
-  margin:0;
-}
-.card-details {
-  margin: 0;
-}
+  .card-title {
+    margin: 0;
+  }
+
+  .card-details {
+    margin: 0;
+  }
 
   .card {
     padding: 10px;
