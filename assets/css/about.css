@@ -1,0 +1,543 @@
+/* Importing the "normalize.css" file which is for resetting all the default css values */
+@import url("./normalize.css");
+
+/* Importing Fonts */
+@import url('http://fonts.cdnfonts.com/css/lato');
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+
+/* ******Main & Secondary Colors****** */
+:root {
+  --bg_color: #f5f5f5;
+  --primary: #272a31;
+  --secondary: #ec5242;
+  --neutral: #d3d3d3;
+  --lato: "lato", verdana, tahoma, sans-serif;
+  --cocogoose: "cocogoose", verdana, tahoma, sans-serif;
+  --verdana: verdana, tahoma, sans-serif;
+  --Tahoma: tahoma, verdana, sans-serif;
+  --sans-serif: sans-serif, verdana, tahoma;
+}
+
+/* **********Global Classes********** */
+.container {
+  font-family: var(--lato);
+  font-style: normal;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* ===============================Header Section=============================== */
+.social-top-header {
+  /* display: flex; */
+  display: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--primary);
+  height: 2.5rem;
+  padding: 5px 25px;
+  width: 100%;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.social-list a {
+  text-decoration: none;
+  color: var(--bg_color);
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--neutral);
+  box-shadow: rgb(0 0 0 / 30%) 0 2px 8px 0;
+  position: relative;
+  width: 100%;
+  height: 5rem;
+}
+
+.menu-toggle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+}
+
+.menu-toggle-btn a {
+  text-decoration: none;
+  background: transparent;
+  font-size: 30px;
+  color: var(--primary);
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.side-menu {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-radius: 0 70% 130px 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to left, var(--primary), var(--primary));
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.side-menu.active {
+  height: 550px;
+  width: 250px;
+  position: absolute;
+  opacity: 1;
+  padding: 0;
+}
+
+/*
+The side-menu nav will be set to
+display: block via JavaScript
+*/
+.side-menu nav {
+  display: none;
+}
+
+.side-menu-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 45px 5px 5px 25px;
+}
+
+#menu_close_btn {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--bg_color);
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+#menu_close_btn:hover {
+  color: var(--secondary);
+}
+
+.side-menu-list li {
+  list-style: none;
+  width: 100%;
+}
+
+.side-menu-list li a {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.side-menu-list li a::after {
+  display: flex;
+  width: 0;
+  height: 3px;
+  bottom: -10px;
+  align-items: center;
+  background: var(--secondary);
+  content: '';
+  transition: 1s;
+  position: absolute;
+}
+
+.side-menu-list li a:hover::after {
+  width: 90px;
+  height: 3px;
+  bottom: -10px;
+  background: var(--secondary);
+  content: '';
+  position: absolute;
+}
+
+.side-menu-list .contact-sublist {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.contact-sublist ul {
+  padding: 0;
+}
+
+.contact-sublist li a {
+  font-size: 18px;
+}
+
+.contact-sublist li a:hover::after {
+  width: 0;
+}
+
+.main-menu-list li a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.contact-sublist li a:hover {
+  color: var(--secondary);
+}
+
+.main-header .logo {
+  box-shadow: none;
+  padding: 5px;
+}
+
+.headline-logo {
+  box-shadow: none;
+  background-color: var(--neutral);
+}
+
+#about_campaign_btn {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--neutral);
+  background-color: var(--secondary);
+  padding: 0.5em 1.25em;
+  border-radius: 0.25em;
+}
+
+/* =============================End of Header Section============================= */
+
+/**********************************************************************************   */
+
+/* =============================Start of Intro Section============================ */
+.section-intro {
+  display: flex;
+  background-image: url('../img/about-bg.png');
+  background-repeat: no-repeat;
+  background-size: 75% auto;
+  background-position-y: 25%;
+  overflow: auto;
+  padding: 45px 25px;
+}
+
+.headline {
+  font-family: "cocogoose", Verdana, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.title-txt {
+  color: var(--secondary);
+}
+
+.title-txt p {
+  font-family: "lato", Verdana, Tahoma, sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+.title-txt h1 {
+  font-size: 22px;
+  padding: 2.5px 0 2.5px  5px;
+  margin: 0;
+}
+
+.body-txt {
+  font-family: "lato", Verdana, Tahoma, sans-serif;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.5rem;
+  color: var(--primary);
+  background: var(--bg_color);
+  padding: 15px 5px;
+  width: 85%;
+  border: solid 1px var(--neutral);
+  margin: 15px;
+}
+
+.location-txt {
+  text-align: center;
+  background-color: var(--bg_color);
+}
+
+.location-txt h2 {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 15px;
+  color: var(--primary);
+  margin: 10px;
+}
+
+.location-txt p {
+  font-family: "lato", Verdana, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--primary);
+  margin: 10px;
+}
+
+/* ===============================End of Intro Section============================= */
+
+/**********************************************************************************   */
+
+/* ===========================Start of Programs Section========================== */
+.section-previous-summits {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg_color);
+  width: 100%;
+  min-height: auto;
+  padding: 75px 25px 25px;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.section-title h2 {
+  font-family: "lato", Verdana, Tahoma, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: var(--primary);
+  margin: 0;
+}
+
+.company-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.company-title h2 {
+  font-family: "lato", Verdana, Tahoma, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: var(--primary);
+  margin: 0;
+}
+
+.underline-bar {
+  width: 100px;
+  height: 16px;
+  border-bottom: 3px solid #ef513c;
+  margin: 0 auto 55px;
+}
+
+/* Card Styling Starts Here */
+.about-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  color: var(--neutral);
+  max-width: 100ch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: scale(1.05);
+}
+
+footer {
+  font-family: var(--lato);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: var(--primary);
+  color: var(--bg_color);
+  text-align: center;
+  gap: 35px;
+  padding: 45px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: justify;
+  gap: 25px;
+}
+
+.footer-logo p {
+  margin: 0;
+}
+
+#scrollback_top {
+  position: fixed;
+  bottom: 3rem;
+  right: 1rem;
+  text-align: right;
+}
+
+#scrollback_top img {
+  width: 30%;
+}
+
+/* Hide all Desktop-Visible */
+.desktop-visible {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  /* Social Top Header Starts Here */
+  .social-top-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--primary);
+    width: 100%;
+    height: 2.5rem;
+    gap: 30px;
+    padding: 5px 115px;
+  }
+
+  .social-list {
+    list-style: none;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .social-list a {
+    text-decoration: none;
+    color: var(--bg_color);
+    cursor: pointer;
+  }
+
+  /* Social Top Header Ends Here */
+
+  /********************************   */
+
+  /* Main Header Starts Here */
+  .main-header {
+    padding: 5px 65px;
+  }
+
+  .main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-weight: bold;
+    width: 75%;
+  }
+
+  .main-menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-intro {
+    background-image: url('../img/about-bg.png');
+    background-size: 90% auto;
+    background-position: center 25%;
+    overflow: auto;
+    height: auto;
+    padding: 65px 75px;
+    width: 100%;
+  }
+
+  .headline {
+    gap: 25px;
+  }
+
+  .title-txt p {
+    font-size: 40px;
+  }
+
+  .title-txt h1 {
+    font-size: 55px;
+    padding: 15px 5px;
+  }
+
+  .body-txt {
+    font-size: 19px;
+    line-height: 2.5rem;
+    background-color: var(--bg_color);
+    margin: 15px;
+    width: 75%;
+    padding: 5px 15px 25px;
+    border: solid 1px var(--neutral);
+  }
+
+  .location-txt {
+    text-align: center;
+  }
+
+  .location-txt h2 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 35px;
+    color: var(--primary);
+    margin: 2px;
+  }
+
+  .location-txt p {
+    font-size: 20px;
+    margin: 5px 2.5px;
+  }
+
+  .company-title {
+    padding: 15px;
+  }
+
+  /* ===========================Start of Programs Section========================== */
+
+  footer {
+    font-family: var(--lato);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: var(--primary);
+    color: var(--bg_color);
+    text-align: center;
+    gap: 35px;
+    padding: 45px;
+  }
+
+  /* Hide all Mobile-Visible */
+  .mobile-visible {
+    display: none;
+  }
+}
