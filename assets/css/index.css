@@ -319,7 +319,6 @@ set to display: block using JavaScript */
   border-bottom: 3px solid #ef513c;
 }
 
-
 /* .program-cards {
   display: flex;
   flex-direction: row;
@@ -430,7 +429,6 @@ set to display: block using JavaScript */
   background-color: var(--secondary);
   color: var(--bg_color);
 }
-
 
 /* Disabling Hover Functionalities For Touch Devices */
 
