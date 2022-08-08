@@ -3,7 +3,7 @@ const speakersData = [
   {
     id: 1,
     name: 'ZikaZaki',
-    image: '../assets/img/speaker1.png',
+    image: './assets/img/speaker1.png',
     organization: 'MIT Institute',
     description:
     'Focusing on a collaborative approach in a networked environment, '
