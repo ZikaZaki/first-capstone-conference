@@ -319,14 +319,46 @@ set to display: block using JavaScript */
   border-bottom: 3px solid #ef513c;
 }
 
-/* Card Styling Starts Here */
+
+/* .program-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+
 .program-cards {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
   gap: 25px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 10px;
+  height: auto;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.card-title {
+  color: var(--secondary);
+}
+
+.card img {
+  width: 75px;
+  height: 75px;
 }
 
 .speakers-list {
@@ -362,157 +394,13 @@ set to display: block using JavaScript */
   color: var(--secondary);
 }
 
-.card {
-  color: var(--neutral);
-  padding: 10rem 0 0;
-  max-width: 35ch;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  transition: transform 500ms ease;
-}
-
-#program1 {
-  background-image: url(../img/html-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#program2 {
-  background-image: url(../img/css-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#program3 {
-  background-image: url(../img/javascript-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#program4 {
-  background-image: url(../img/react-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#program5 {
-  background-image: url(../img/ruby-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#program6 {
-  background-image: url(../img/rails-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#program7 {
-  background-image: url(../img/python-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#program8 {
-  background-image: url(../img/django-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#program9 {
-  background-image: url(../img/kotlin-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#program10 {
-  background-image: url(../img/csharp-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#program11 {
-  background-image: url(../img/postgres-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#program12 {
-  background-image: url(../img/nodejs-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.card:hover,
-.card:focus-within {
-  transform: scale(1.05);
-}
-
-.card-content {
-  --padding: 1.5rem;
-
-  padding: var(--padding);
-  background:
-    linear-gradient(
-      hsl(0 0% 0% / 0),
-      hsl(20 0% 0% / 0.3) 20%,
-      hsl(0 0% 0% /1)
-    );
-}
-
 .card-title {
-  position: relative;
-  width: max-content;
-  margin: 0;
+  margin:0;
 }
-
-.card-title::after {
-  content: "";
-  position: absolute;
-  height: 4px;
-  left: calc(var(--padding) * -1);
-  bottom: -6px;
-  width: calc(100% + var(--padding));
-  background-color: var(--secondary);
-  transform-origin: left;
-  transition: transform 500ms ease;
-}
-
-.card:hover .card-title::after,
-.card:focus-within .card-title::after {
-  transform: scaleX(1);
-}
-
 .card-details {
   text-align: justify;
   color: rgb(255 255 255 / 0.85);
-}
-
-.card-btn {
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-  color: var(--neutral);
-  background-color: var(--secondary);
-  padding: 0.5em 1.25em;
-  border-radius: 0.25em;
-}
-
-.card-btn:hover,
-.card-btn:focus {
-  background-color: var(--primary);
+  margin: 0;
 }
 
 .view-more {
@@ -546,40 +434,6 @@ set to display: block using JavaScript */
   color: var(--bg_color);
 }
 
-/* Card Styling Ends Here */
-
-/* Disabling Hover Functionalities On Touch Devices */
-@media (hover) {
-  .card-content {
-    transform: translateY(65%);
-    transition: transform 500ms ease;
-  }
-
-  .card:hover .card-content,
-  .card:focus-within .card-content {
-    transform: translateY(0);
-    transition-delay: 250ms;
-  }
-
-  .card:focus-within .card-content {
-    transition-duration: 0ms;
-  }
-
-  .card-content > *:not(.card-title) {
-    opacity: 0;
-    transition: opacity 500ms linear;
-  }
-
-  .card:hover .card-content > *:not(.card-title),
-  .card:focus-within .card-content > *:not(.card-title) {
-    opacity: 1;
-    transition-delay: 250ms;
-  }
-
-  .card-title::after {
-    transform: scaleX(0);
-  }
-}
 
 /* Disabling Hover Functionalities For Touch Devices */
 
@@ -778,10 +632,32 @@ footer {
   .program-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 25px;
+    text-align: center;    
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.card-title {
+  margin:0;
+}
+.card-details {
+  margin: 0;
+}
+
+  .card {
+    padding: 10px;
+    height: 15rem;
+    width: 15rem;
+    background: rgba(255, 255, 255, 0.1);
   }
 
   .section-speakers {
@@ -792,8 +668,6 @@ footer {
     display: grid;
     grid-template-rows: auto 1fr auto;  /* key rule */
     grid-template-columns: 1fr 1fr;
-
-    /* flex-wrap: wrap; */
     overflow: auto;
     height: auto;
   }
