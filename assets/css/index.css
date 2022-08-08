@@ -11,13 +11,16 @@
   --primary: #272a31;
   --secondary: #ec5242;
   --neutral: #d3d3d3;
+  --lato: "lato", Verdana, Tahoma, sans-serif;
+  --cocogoose: "cocogoose", Verdana, Tahoma, sans-serif;
+  --verdana: Verdana, Tahoma, sans-serif;
+  --Tahoma: Tahoma, Verdana, sans-serif;
+  --sans-serif: sans-serif, Verdana, Tahoma;
 }
-
-/* font-family: "cocogoose", Verdana, Tahoma, sans-serif; */
 
 /* **********Global Classes********** */
 .container {
-  font-family: "lato", Verdana, Tahoma, sans-serif;
+  font-family: var(--lato);
   font-style: normal;
   width: 100%;
   padding: 0;
@@ -25,46 +28,16 @@
 }
 
 /* ===============================Header Section=============================== */
-.social-top-header {
-  /* display: flex; */
-  display: none;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 30px;
-  background-color: var(--primary);
-  height: 2.5rem;
-  padding: 5px 25px;
-  width: 100%;
-}
-
-.social-list {
-  display: flex;
-  list-style: none;
-  font-size: 15px;
-  padding: 0;
-  margin: 0;
-}
-
-.social-list a {
-  text-decoration: none;
-  color: var(--bg_color);
-}
-
+/* Main Header Starts Here */
 .main-header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   background-color: var(--neutral);
   box-shadow: rgb(0 0 0 / 30%) 0 2px 8px 0;
   position: relative;
-  padding: 5px 25px;
   width: 100%;
-
-  /* gap: 20px; */
-
-  /* gap: calc(50% - 35%); */
   height: 5rem;
 }
 
@@ -73,25 +46,23 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 32px;
-  height: 32px;
+  width: auto;
+  height: auto;
+  padding: 5px;
 }
 
 .menu-toggle-btn a {
+  font-size: 32px;
   text-decoration: none;
   background: transparent;
-  font-size: 30px;
   color: var(--primary);
-  transition: 0.3s;
   cursor: pointer;
-  width: 100%;
-  height: 100%;
 }
 
 .side-menu {
   display: inline-block;
-  height: 0;
-  width: 0;
+  height: 0; /* Will be inflated with JavaScript */
+  width: 0; /* Will be inflated with JavaScript */
   border-radius: 0 70% 130px 0;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -110,13 +81,13 @@
   padding: 0;
 }
 
-/*
-The side-menu nav will be set to
-display: block via JavaScript
-*/
+/* !Important: The side-menu nav will be 
+set to display: block using JavaScript */
+/* *************************************** */
 .side-menu nav {
   display: none;
 }
+/* *************************************** */
 
 .side-menu-list {
   display: flex;
@@ -203,31 +174,7 @@ display: block via JavaScript
 
 .main-header .logo {
   box-shadow: none;
-  padding: 0 25px;
-}
-
-.main-menu {
-  /* display: flex; */
-  display: none;
-  flex-direction: row;
-  justify-content: flex-end;
-  font-weight: bold;
-
-  /* width: 75%; */
-  width: calc(100% - 130px);
-}
-
-.main-menu-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-}
-
-.main-menu-list li {
-  list-style: none;
+  padding: 5px
 }
 
 #home_campaign_btn {
@@ -239,82 +186,75 @@ display: block via JavaScript
   padding: 0.5em 1.25em;
   border-radius: 0.25em;
 }
-
+/* Main Header Starts Here */
 /* =============================End of Header Section============================= */
 
 /**********************************************************************************   */
 
 /* =============================Start of Intro Section============================ */
 .section-intro {
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr;
   background-image: url('../img/mobile-intro-bg.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
   width: 100%;
   height: auto;
-  padding: 45px 25px;
+  text-align: justify;
+  padding: 100px 55px;
+  background-color: var(--bg_color);
 }
 
 .headline {
-  font-family: "cocogoose", Verdana, Tahoma, sans-serif;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  font-family: var(--cocogoose);
   width: 100%;
-  text-align: center;
-
-  /* padding: 30px 0; */
 }
 
-.title-txt {
-  color: var(--secondary);
-}
-
-.title-txt p {
-  font-family: "lato", Verdana, Tahoma, sans-serif;
-  font-size: 20px;
-  margin: 0;
-}
-
-.title-txt h1 {
-  font-size: 22px;
-  padding: 2.5px 0 2.5px  5px;
-
-  /* font-weight: lighter; */
-  margin: 0;
+.home-title img{
+  width: 100%;
 }
 
 .body-txt {
-  font-family: "lato", Verdana, Tahoma, sans-serif;
-  text-align: justify;
+  font-family: var(--lato);
   font-size: 15px;
   line-height: 1.5rem;
   color: var(--primary);
   background: var(--bg_color);
-  padding: 15px 5px;
+  border: 4px solid #fff;
+  padding: 5px;
+  width: 100%;
+  margin: 30px 0 0;
+}
+
+.body-txt p {
+  margin: 0;
 }
 
 .location-txt {
-  padding: 30px 0;
-  text-align: center;
+  padding: 20px 0;
+  text-align: justify;
+  width: 100%;
+
 }
 
 .location-txt h2 {
-  font-family: Verdana, Tahoma, sans-serif;
-  font-size: 15px;
+  font-family: var(--verdana);
+  font-size: 20px;
   color: var(--primary);
-  margin: 10px;
+  width: 100%;
+  margin: 10px 0 0;
 }
 
 .location-txt p {
-  font-family: "lato", Verdana, Tahoma, sans-serif;
+  font-family: var(--lato);
   font-size: 15px;
   font-weight: 500;
   color: var(--primary);
-  margin: 10px;
+  margin: 5px 0 0;
 }
-
 /* ===============================End of Intro Section============================= */
 
 /**********************************************************************************   */
@@ -341,12 +281,12 @@ display: block via JavaScript
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0;
-  margin: 0 10px 75px;
+  /* padding: 0; */
+  padding: 0 10px 75px;
 }
 
 .section-title h2 {
-  font-family: "lato", Verdana, Tahoma, sans-serif;
+  font-family: var(--lato);
   font-size: 24px;
   text-align: center;
   color: var(--neutral);
@@ -354,7 +294,7 @@ display: block via JavaScript
 }
 
 .speakers-title h2 {
-  font-family: "lato", Verdana, Tahoma, sans-serif;
+  font-family: var(--lato);
   font-size: 24px;
   text-align: center;
   color: var(--primary);
@@ -520,7 +460,6 @@ display: block via JavaScript
 
 .card-content {
   --padding: 1.5rem;
-
   padding: var(--padding);
   background:
     linear-gradient(
@@ -534,8 +473,6 @@ display: block via JavaScript
   position: relative;
   width: max-content;
   margin: 0;
-
-  /* padding: 10px 0; */
 }
 
 .card-title::after {
@@ -574,7 +511,9 @@ display: block via JavaScript
 .card-btn:focus {
   background-color: var(--primary);
 }
+/* Card Styling Ends Here */
 
+/* Disabling Hover Functionalities On Touch Devices */
 @media (hover) {
   .card-content {
     transform: translateY(65%);
@@ -606,25 +545,7 @@ display: block via JavaScript
     transform: scaleX(0);
   }
 }
-
-/* For people who prefer reduced motion or animation */
-
-/* @mdeia (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-interaction-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-    transition-delay: 0ms !important;
-  }
-} */
-
-/* End of reduced morion or animation */
-
-/* Card Styling Ends Here */
-
+/* Disabling Hover Functionalities For Touch Devices */
 /* ============================End of Programs Section============================ */
 
 /**********************************************************************************   */
@@ -641,18 +562,13 @@ display: block via JavaScript
 
 /* ============================End of Speakers Section============================ */
 
-/* Hide all Desktop-Visible */
-.desktop-visible {
-  /* display: none; */
-}
-
 footer {
   display: flex;
   flex-direction: column;
-  font-family: "lato", Verdana, Tahoma, sans-serif;
+  font-family: var(--lato);
   font-size: 20px;
-  margin: 0 auto;
-  padding: 125px;
+  margin: 0;
+  padding: 45px;
   background-color: var(--primary);
   color: var(--bg_color);
   text-align: center;
@@ -668,64 +584,104 @@ footer {
 #scrollback_top img {
   width: 30%;
 }
-
+/* Hide all Desktop-Visible */
+.desktop-visible {
+  display: none;
+}
+/* ===============================End of Mobile-Styling=============================== */
+/***************************************************************************************/
+/* ==============================Start of Desktop Styling============================= */
 @media screen and (min-width: 768px) {
-  .mobile-visible {
-    display: none;
-  }
+/* Social Top Header Starts Here */
+.social-top-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--primary);
+  width: 100%;
+  height: 2.5rem;
+  gap: 30px;
+  padding: 5px 115px;
+}
 
-  .social-top-header {
-    display: flex;
-    padding: 5px 45px;
-  }
+.social-list {
+  list-style: none;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
 
+.social-list a {
+  text-decoration: none;
+  color: var(--bg_color);
+  cursor: pointer;
+}
+/* Social Top Header Ends Here */
+/*********************************/
+/* Main Header Starts Here */
   .main-header {
-    padding: 5px 70px;
+    padding: 5px 65px;
   }
 
   .main-menu {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
+    font-weight: bold;
+    width: 75%;
   }
-
+  
   .main-menu-list {
-    gap: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
   }
-
+  /* Main Header Ends Here */
+  /*********************************/
+  /* Intro Section Starts Here */
   .section-intro {
     background-image: url('../img/desktop-intro.png');
     background-size: cover;
     background-position: center;
     height: 855px;
-    padding: 140px 175px;
+    padding: 95px 205px;
   }
 
   .headline {
-    /* padding: 45px 0; */
+    padding: 45px 0;
   }
 
-  .title-txt p {
+  .home-title img {
+    width: 75%;
+  }
+
+  /* .title-txt p {
     font-size: 40px;
   }
-
+  
   .title-txt h1 {
     font-size: 55px;
     padding: 15px 5px;
-  }
+  } */
 
   .body-txt {
     font-size: 19px;
     line-height: 2.5rem;
     border: 4px solid #fff;
     background-color: var(--bg_color);
-    margin: 5px;
-    width: 625px;
-    padding: 5px 15px;
+    margin: 15px 0 0;
+    width: calc(70%);
+    padding: 10px 25px 0;
   }
 
   .location-txt {
-    padding: 5px;
+    padding: 55px 5px;
     text-align: justify;
   }
 
@@ -761,4 +717,8 @@ footer {
     color: white;
     text-align: center;
   }
+    /* Hide all Mobile-Visible */
+    .mobile-visible {
+      display: none;
+    }  
 }
