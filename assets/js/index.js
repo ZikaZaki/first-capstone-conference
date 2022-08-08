@@ -14,15 +14,15 @@ closeButton.onclick = function () {
   sideMenuNav.style.display = 'none';
 };
 
-const viewMoreBtn = document.querySelector(".view-more-btn");
-const morePrograms = document.querySelector(".view-more");
+const viewMoreBtn = document.querySelector('.view-more-btn');
+const morePrograms = document.querySelector('.view-more');
 
-viewMoreBtn.addEventListener("click", (e) => {
-  if (viewMoreBtn.innerText === "View All Programs") {
-    morePrograms.style.display = "flex";
-    viewMoreBtn.innerText = "View Less";
+viewMoreBtn.addEventListener('click', (e) => {
+  if (viewMoreBtn.innerText === 'View All Programs') {
+    morePrograms.style.display = 'flex';
+    viewMoreBtn.innerText = 'View Less';
   } else {
-    morePrograms.style.display = "none";
-    viewMoreBtn.innerText = "View All Programs";
+    morePrograms.style.display = 'none';
+    viewMoreBtn.innerText = 'View All Programs';
   }
 });
