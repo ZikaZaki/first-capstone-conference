@@ -112,6 +112,14 @@ set to display: block using JavaScript */
   color: var(--secondary);
 }
 
+.speaker-name a {
+  font: var(--lato);
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .side-menu-list li {
   list-style: none;
   width: 100%;
@@ -341,6 +349,17 @@ set to display: block using JavaScript */
 
 .speaker-info {
   padding: 25px;
+}
+
+.speaker-name {
+  padding: 10px 0;
+}
+
+.org-name {
+  font: var(--lato);
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--secondary);
 }
 
 .card {
