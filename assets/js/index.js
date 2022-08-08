@@ -13,7 +13,7 @@ const speakersData = [
   {
     id: 2,
     name: 'ZikaZaki',
-    image: '/assets/img/speaker2.png',
+    image: './assets/img/speaker2.png',
     organization: 'MIT Institute',
     description:
     'Focusing on a collaborative approach in a networked environment, '
@@ -23,7 +23,7 @@ const speakersData = [
   {
     id: 3,
     name: 'ZikaZaki',
-    image: '/assets/img/speaker3.png',
+    image: './assets/img/speaker3.png',
     organization: 'MIT Institute',
     description:
     'Focusing on a collaborative approach in a networked environment, '
@@ -33,7 +33,7 @@ const speakersData = [
   {
     id: 4,
     name: 'ZikaZaki',
-    image: '/assets/img/speaker4.png',
+    image: './assets/img/speaker4.png',
     organization: 'MIT Institute',
     description:
     'Focusing on a collaborative approach in a networked environment, '
@@ -43,7 +43,7 @@ const speakersData = [
   {
     id: 5,
     name: 'ZikaZaki',
-    image: '/assets/img/speaker5.png',
+    image: './assets/img/speaker5.png',
     organization: 'MIT Institute',
     description:
     'Focusing on a collaborative approach in a networked environment, '
@@ -53,7 +53,7 @@ const speakersData = [
   {
     id: 6,
     name: 'ZikaZaki',
-    image: '/assets/img/speaker6.png',
+    image: './assets/img/speaker6.png',
     organization: 'MIT Institute',
     description:
     'Focusing on a collaborative approach in a networked environment, '
