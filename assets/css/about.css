@@ -414,8 +414,8 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-   /* Social Top Header Starts Here */
-   .social-top-header {
+  /* Social Top Header Starts Here */
+  .social-top-header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
