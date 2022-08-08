@@ -101,7 +101,7 @@ function createSpeakersCard(obj) {
 }
 
 const speakersList = document.querySelector('.speakers-list');
-speakersData.forEach(obj => {
+speakersData.forEach((obj) => {
   speakersList.appendChild(createSpeakersCard(obj));
 });
 
