@@ -75,6 +75,10 @@ $ npm install
 
 Give a ⭐️ if you like this project!
 
+## Credits
+
+**[Cindy Shin](https://www.behance.net/adagio07)** the author of the original design,
+
 ## Acknowledgments
 
 - [Microverse](https://www.microverse.org/)
