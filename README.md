@@ -16,11 +16,11 @@
 
 ## Live Demo (Deployed on GitHub Pages)
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blueviolet)](https://github.com/ZikaZaki/first-capstone-conference)
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blueviolet)](https://zikazaki.github.io/first-capstone-conference/index.html)
 
-[Live Demo Link](hhttps://github.com/ZikaZaki/first-capstone-conference)
+[Live Demo Link](https://zikazaki.github.io/first-capstone-conference/index.html)
 
-## Mobile-Screenshots
+## Mobile-Screenshots 
 
 ![Photo_image](/assets/img/mobile-screenshot.png)
 
