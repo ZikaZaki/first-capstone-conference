@@ -20,6 +20,10 @@
 
 [Live Demo Link](https://zikazaki.github.io/first-capstone-conference/index.html)
 
+## Live Demo (Video Using Loom)
+
+Here's a link to the recorded video [Video of The Project](https://www.loom.com/share/4d0ff7c5c61342f19835353074341254), which I explain all the features and customizations I added to the project.
+
 ## Mobile-Screenshots 
 
 ![Photo_image](/assets/img/mobile-screenshot.png)
