@@ -17,7 +17,7 @@ closeButton.onclick = function () {
 const viewMoreBtn = document.querySelector('.view-more-btn');
 const morePrograms = document.querySelector('.view-more');
 
-viewMoreBtn.addEventListener('click', (e) => {
+viewMoreBtn.addEventListener('click', () => {
   if (viewMoreBtn.innerText === 'View All Programs') {
     morePrograms.style.display = 'flex';
     viewMoreBtn.innerText = 'View Less';
